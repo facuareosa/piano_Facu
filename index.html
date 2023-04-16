@@ -6,31 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/blackKey.css">
+    <link rel="stylesheet" href="./styles/whiteKey.css">
     <title>Piano || Facu</title>
   </head>
   <body>
     <div class="piano__container">
       <div class="keyboard__container">
         <div class="white__keys">
-          <div data-key="65" class="white__key"></div>
-          <div data-key="83" class="white__key"></div>
-          <div data-key="68" class="white__key"></div>
-          <div data-key="70" class="white__key"></div>
-          <div data-key="71" class="white__key"></div>
-          <div data-key="72" class="white__key"></div>
-          <div data-key="74" class="white__key"></div>
-          <div data-key="75" class="white__key"></div>
-          <div data-key="76" class="white__key"></div>
-          <div data-key="192" class="white__key"></div>
+          <div data-key="65" class="white__key">
+            <span class="white__note">DO</span>
+            <span class="white__help">A</span>
+          </div>
+          <div data-key="83" class="white__key">
+            <span class="white__note">RE</span>
+            <span class="white__help">S</span>
+          </div>
+          <div data-key="68" class="white__key">
+            <span class="white__note">MI</span>
+            <span class="white__help">D</span>
+          </div>
+          <div data-key="70" class="white__key">
+            <span class="white__note">FA</span>
+            <span class="white__help">F</span>
+          </div>
+          <div data-key="71" class="white__key">
+            <span class="white__note">SOL</span>
+            <span class="white__help">G</span>
+          </div>
+          <div data-key="72" class="white__key">
+            <span class="white__note">LA</span>
+            <span class="white__help">H</span>
+          </div>
+          <div data-key="74" class="white__key">
+            <span class="white__note">SI</span>
+            <span class="white__help">J</span>
+          </div>
+          <div data-key="75" class="white__key">
+            <span class="white__note">DO</span>
+            <span class="white__help">K</span>
+          </div>
+          <div data-key="76" class="white__key">
+            <span class="white__note">RE</span>
+            <span class="white__help">L</span>
+          </div>
+          <div data-key="192" class="white__key">
+            <span class="white__note">MI</span>
+            <span class="white__help">Ñ</span>
+          </div>
         </div>
         <div class="black__keys">
-            <div data-key="87" class="black__key"></div>
-            <div data-key="69" class="black__key"></div>
-            <div data-key="84" class="black__key"></div>
-            <div data-key="89" class="black__key"></div>
-            <div data-key="85" class="black__key"></div>
-            <div data-key="79" class="black__key"></div>
-            <div data-key="80" class="black__key"></div>
+          <div data-key="87" class="black__key">
+            <span class="black__note">DO#</span>
+            <span class="black__help">W</span>
+          </div>
+          <div data-key="69" class="black__key">
+            <span class="black__note">RE#</span>
+            <span class="black__help">E</span>
+          </div>
+          <div data-key="84" class="black__key">
+            <span class="black__note">FA#</span>
+            <span class="black__help">T</span>
+          </div>
+          <div data-key="89" class="black__key">
+            <span class="black__note">SOL#</span>
+            <span class="black__help">Y</span>
+          </div>
+          <div data-key="85" class="black__key">
+            <span class="black__note">LA#</span>
+            <span class="black__help">U</span>
+          </div>
+          <div data-key="79" class="black__key">
+            <span class="black__note">DO#</span>
+            <span class="black__help">O</span>
+          </div>
+          <div data-key="80" class="black__key">
+            <span class="black__note">RE#</span>
+            <span class="black__help">P</span>
+          </div>
         </div>
       </div>
     </div>
@@ -53,6 +106,7 @@
     <audio data-key="80" src="./assets/sounds/d-5.mp3"></audio>
     <audio data-key="192" src="./assets/sounds/e5.mp3"></audio>
 
-    <script src="./js/controller.js"></script>
+    <script src="./js/clickController.js"></script>
+    <script src="./js/keyController.js"></script>
   </body>
 </html>
