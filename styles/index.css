@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+    background-color: rgb(199, 199, 199);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -8,8 +8,9 @@ body{
 .piano__container{
     background-color: black;
     border: outset white 5px;
+    box-shadow: inset white 0px 0px 0px 2px;
     width: 1000px;
-    height: 500px;
+    height: 400px;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -17,47 +18,6 @@ body{
     
 }
 .keyboard__container{
+    border: outset black 5px;
     position: relative;
 }
-.black__key{
-    background-color: black;
-    border-radius: 0 0 8px 8px;
-    border: solid 1px grey;
-    height: 187.5px;
-    width: 30px;
-    position: absolute;
-    top: 0; left: 60px;
-}
-.black__key:active{
-    box-shadow: inset 0 -10px 20px -10px white,
-                inset 0 10px 10px -10px black;
-}
-.black__key-active{
-    box-shadow: inset 0 -10px 20px -10px white,
-                inset 0 10px 10px -10px black;
-}
-.black__key:nth-child(2){
-    position: absolute;
-    top: 0; left: 139px;
-}
-.black__key:nth-child(3){
-    position: absolute;
-    top: 0; left: 292px;
-}
-.black__key:nth-child(4){
-    position: absolute;
-    top: 0; left: 369px;
-}
-.black__key:nth-child(5){
-    position: absolute;
-    top: 0; left: 447px;
-}
-.black__key:nth-child(6){
-    position: absolute;
-    top: 0; left: 601px;
-}
-.black__key:nth-child(7){
-    position: absolute;
-    top: 0; left: 678px;
-}
-
